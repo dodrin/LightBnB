@@ -31,8 +31,8 @@ INSERT INTO properties (
   active
   )
   VALUES (1, 'Speed lamp', 'description', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 5000, 2, 3, 2, 'Canada', '123 Vancouver street', 'Vancouver', 'British Columbia', 'VVV VVV', true),
-         (2, 'Cat Condo', 'description', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg', 1200, 2, 3, 2, 'Canada', '123 Paradise valley road', 'Squamish', 'British Columbia', 'VVV VVV', true),
-         (2, 'Mouse Lair', 'description', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350', ' https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg', 500, 2, 3, 2, 'Canada', '888 Aloha avenue', 'Tofino', 'British Columbia', 'VVV VVV', true);
+         (2, 'Cat tower', 'description', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg', 1200, 2, 3, 2, 'Canada', '123 Paradise valley road', 'Squamish', 'British Columbia', 'VVV VVV', true),
+         (2, 'Kuma castle', 'description', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350', ' https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg', 500, 2, 3, 2, 'Canada', '888 Aloha avenue', 'Tofino', 'British Columbia', 'VVV VVV', true);
 
 INSERT INTO reservations (start_date, end_date, property_id, guest_id)
   VALUES ('2018-09-11', '2018-09-26', 2, 3),
