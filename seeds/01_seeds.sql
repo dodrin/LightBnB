@@ -2,15 +2,15 @@ INSERT INTO users (name, email, password)
 VALUES (
     'Eva Stanley',
     'sebastianguerra@ymail.com',
-    '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u. '
+    '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'
   ),(
     'Blank Corner',
     'jacksonrose@hotmail.com',
-    '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u. '
+    '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'
   ),(
     'Dominic Parks',
     'victorialackwell@outlook.com',
-    '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u. '
+    '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'
   );
 
 INSERT INTO properties (
