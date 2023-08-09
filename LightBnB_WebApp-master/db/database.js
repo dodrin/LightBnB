@@ -9,14 +9,9 @@ const pool = new Pool({
   database: "lightbnb",
 });
 
-// pool
-//   .query(`SELECT title FROM properties LIMIT 10;`)
-//   .then((response) => {})
-//   .catch((error) => {
-//     console.log("Promise rejected");
-//     console.log(error);
-//   });
-/// Users
+pool.connect()
+  .then(()=> console.log('connected'))
+  .catch((err) => console.log(err.message));
 
 /**
  * Get a single user from the database given their email.
@@ -24,7 +19,6 @@ const pool = new Pool({
  * @return {Promise<{}>} A promise to the user.
  */
 const getUserWithEmail = function (email) {
-  // console.log("Testing getUserWithEmail ", email )
   return pool
     .query(`SELECT * FROM users WHERE email = $1;`, [email])
     .then((res) => {
@@ -205,7 +199,6 @@ const addProperty = function (property) {
       return res.rows[0];
     })
     .catch((error) => {
-      console.log(property);
       console.log(`Error: ${error.message}`);
       return null;
     });
