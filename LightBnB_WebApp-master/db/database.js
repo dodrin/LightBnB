@@ -51,6 +51,7 @@ const getUserWithId = function (id) {
  */
 const addUser = function (user) {
   const { name, email, password} = user;
+
   return pool
     .query(
       `INSERT INTO users (name, email, password)
@@ -158,6 +159,13 @@ const getAllProperties = (options, limit = 10) => {
  * @return {Promise<{}>} A promise to the property.
  */
 const addProperty = function (property) {
+
+  //Validate teh property object
+  if (!property) {
+    console.log('Invalid property object.')
+    return Promise.resolve(null);
+  }
+
   const queryParams = [
     property.owner_id,
     property.title,
@@ -202,7 +210,7 @@ const addProperty = function (property) {
       return res.rows[0];
     })
     .catch((error) => {
-      console.log(`Error: ${error.message}`);
+      console.log(error.message);
       return null;
     });
 };
