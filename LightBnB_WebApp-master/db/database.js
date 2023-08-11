@@ -1,5 +1,3 @@
-// const properties = require("./json/properties.json");
-// const users = require("./json/users.json");
 const { Pool } = require("pg");
 
 const pool = new Pool({
@@ -148,8 +146,6 @@ const getAllProperties = (options, limit = 10) => {
   ORDER BY cost_per_night
   LIMIT $${queryParams.length};`;
 
-  // console.log(queryString, queryParams);
-
   return pool.query(queryString, queryParams).then((res) => res.rows);
 };
 
@@ -160,7 +156,7 @@ const getAllProperties = (options, limit = 10) => {
  */
 const addProperty = function (property) {
 
-  //Validate teh property object
+  //Validate the property object
   if (!property) {
     console.log('Invalid property object.')
     return Promise.resolve(null);
