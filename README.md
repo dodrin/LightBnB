@@ -8,8 +8,8 @@ This project was a part of my learnings at lighthouse labs.
 
 1. Design and create the database and tables using ERD
 2. Use the psql CLI to interact with and explore a database
-3. User asynchronous postgres JS libraries to query data from Node appliacations
+3. Use asynchronous postgres JS libraries to query data from Node appliacations
 
-### Things to note
+#### Things to note
 
 There are a few minor bugs that won't display some of the data due to the original data not existing anymore or simply not added since it was not the part of the course.
